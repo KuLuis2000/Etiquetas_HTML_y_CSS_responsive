@@ -1,0 +1,136 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: helvetica;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333;
+}
+
+/* Variales css */
+:root{
+ --rojo: #a70b3a;
+ --negro: #333;
+ --grisbajo: #ececec;
+}
+
+.color_rojo{
+  color: var(--rojo);
+}
+
+h1{
+  text-align: center;
+  padding: 20px;
+}
+
+.contenedormenu{
+  text-align: center;
+  padding: 10px;
+  background-color: var(--grisbajo);
+}
+
+.contenedormenu ul{
+  margin: auto;
+  max-width: 1200px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: start;
+  justify-content: center;
+  justify-content: end; */
+  /* justify-content: space-between; */
+  /* justify-content: space-around; */
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;   /* Espacio entre cada hijo */
+}
+
+/* .contenedormenu ul li{
+  border: 3px green solid;
+} */
+
+.contenedormenu ul li a{
+  padding: 5px;
+  text-decoration: none;
+  display: block;
+  color: var(--negro);
+}
+
+.contenedormenu a:hover{
+  color: rgb(255, 221, 0);
+}
+
+.ancho{
+  max-width: 1200px;
+  margin: auto;
+}
+
+.foto{
+  max-width: 500px;
+}
+
+.foto img{
+  width: 100%;
+  display: block;
+  min-height: 280px;
+  object-fit: cover;
+  border: 10px white solid;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px #ccc;
+}
+
+.contenedor_informacion{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.conocimientos{
+  max-width: 500px;
+  padding: 10px;
+}
+
+.conocimientos ul{
+  margin-left: 40px;
+  padding: 10px;
+}
+
+footer{
+  background-color: var(--negro);
+  color: white;
+  min-height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+footer a{
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+footer a:hover{
+  color: var(--rojo);
+}
+
+.cel{
+  background-color: #ccc;
+  text-decoration: none;
+  color: var(--negro);
+  padding: 15px;
+  border-radius: 15px;
+}
